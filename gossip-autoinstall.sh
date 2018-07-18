@@ -36,8 +36,7 @@ function delete_old_installation() {
 function download_node() {
   echo -e "Prepare to download ${GREEN}$COIN_NAME${NC}"
   cd /root >/dev/null 2>&1
-  wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh && chmod +x gos-control.sh  >/dev/null 2>&1
-  wget -q $COIN_TGZ
+  wget -q $COIN_TGZ && wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh && chmod +x gos-control.sh
   unzip $COIN_ZIP >/dev/null 2>&1
   chmod +x $COIN_DAEMON
   chmod +x $COIN_CLI
