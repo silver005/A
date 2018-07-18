@@ -215,7 +215,7 @@ if [ "$?" -gt "0" ];
     echo -e "${RED}Not all required packages were installed properly. Try to install them manually by running the following commands:${NC}\n"
     echo "apt-get update"
     echo "apt -y install sudo git wget curl ufw fail2ban nano unzip htop"
-    echo -e "wget https://github.com/smai2018/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh"
+    echo -e "wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/blob/master/gos-control.sh"
     echo -e "----------------------------------------------------------------------------------------------------------------------------------"
  exit 1
 fi
