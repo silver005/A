@@ -3,4 +3,4 @@ Autoinstall script GOSSIP Coin
 
 # Installation
 
-wget https://github.com/GOSSIP-DEV/raw/master/GOSSIP-masternode-autoinstall/gossip-autoinstall.sh && bash vyigrat-setup.sh
+wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gossip-autoinstall.sh && bash gossip-setup.sh
