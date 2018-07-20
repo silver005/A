@@ -101,7 +101,13 @@ rpcallowip=127.0.0.1
 listen=1
 server=1
 daemon=1
-addnode=80.211.186.19
+addnode=80.211.186.19:22123
+addnode=149.28.65.127:22123
+addnode=139.99.194.170:22123
+addnode=8.9.5.48:22123
+addnode=45.77.224.32:22123
+addnode=207.148.24.114:22123
+addnode=140.82.57.64:22123
 port=$COIN_PORT
 EOF
 }
