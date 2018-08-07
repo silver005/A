@@ -36,7 +36,7 @@ function delete_old_installation() {
 function download_node() {
   echo -e "Prepare to download ${GREEN}$COIN_NAME${NC}"
   cd /root >/dev/null 2>&1
-  wget -q $COIN_TGZ && wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh && chmod +x gos-control.sh
+  wget -q $COIN_TGZ && wget https://github.com/g0ssipcoin/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh && chmod +x gos-control.sh
   unzip $COIN_ZIP >/dev/null 2>&1
   chmod +x $COIN_DAEMON
   chmod +x $COIN_CLI
@@ -101,13 +101,13 @@ rpcallowip=127.0.0.1
 listen=1
 server=1
 daemon=1
-addnode=80.211.186.19:22123
-addnode=149.28.65.127:22123
+addnode=80.211.195.49:22123
+addnode=80.211.42.218:22123
 addnode=139.99.194.170:22123
 addnode=8.9.5.48:22123
-addnode=45.77.224.32:22123
+addnode=80.211.194.112:22123
 addnode=207.148.24.114:22123
-addnode=140.82.57.64:22123
+addnode=212.237.8.137:22123
 port=$COIN_PORT
 EOF
 }
@@ -219,7 +219,7 @@ if [ "$?" -gt "0" ];
     echo -e "${RED}Not all required packages were installed properly. Try to install them manually by running the following commands:${NC}\n"
     echo "apt-get update"
     echo "apt -y install sudo git wget curl ufw fail2ban nano unzip htop"
-    echo -e "wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh"
+    wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
     echo -e "----------------------------------------------------------------------------------------------------------------------------------"
  exit 1
 fi
