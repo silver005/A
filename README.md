@@ -1,5 +1,5 @@
 # GOSSIP
-Shell script to install a [GOSSIP Masternode](http://gossipcoin.net/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [GOSSIP Masternode](https://gossipcoin.net/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
 
 This script install the GOSSIP cold wallet on your VPS, update Ubuntu, creates a service for the wallet and configures the firewall.
 
@@ -9,7 +9,7 @@ Prepare your Windows wallet:
 
 ## Installation
 ```
-wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
+wget https://github.com/g0ssipcoin/GOSSIP-masternode-autoinstall/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
 ```
 ## Usage control script:
 
