@@ -9,7 +9,7 @@ usage="./gos-control.sh [arguments]"
 VERBOSE=true
 counter="0"
 
-while getopts 'abcdefhklm?' option
+while getopts 'abcdefghklm?' option
 do
   case "$option" in
   a) systemctl start GOSSIP
@@ -32,6 +32,9 @@ do
   f) gossipcoin-cli masternode status
      ((counter+=1))
      ;;
+  g) gossipcoin-cli getblockcount
+     ((counter+=1))
+     ;;  
   h) $usage
      ((counter+=1))
      ;; 
