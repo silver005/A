@@ -22,6 +22,7 @@ wget https://github.com/g0ssipcoin/GOSSIP-masternode-autoinstall/raw/master/goss
 -d checks the autostart of the GOSSIP service when the server is starting
 -e masternode sync status
 -f masternode status
+-g checks the blockcount
 -h help - usage for this script
 -k firewall status
 -l show gossipcoin.conf
