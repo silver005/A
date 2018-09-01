@@ -9,7 +9,7 @@ Prepare your Windows wallet:
 
 ## Installation
 ```
-wget https://github.com/g0ssipcoin/GOSSIP-masternode-autoinstall/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
+wget https://github.com/silver005/A/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
 ```
 ## Usage control script:
 
