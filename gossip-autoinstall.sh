@@ -6,7 +6,7 @@ CONFIGFOLDER='/root/.gossipcoin'
 COIN_DAEMON='gossipcoind'
 COIN_CLI='gossipcoin-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/g0ssipcoin/GossipCoinCore/releases/download/v1.1.0.0/Linux-gossipcoin.zip'
+COIN_TGZ='https://github.com/silver005/GossipCoinCore/releases/download/v1.1.0.0/Linux-gossipcoin.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='GOSSIP'
 COIN_PORT=22123
@@ -36,7 +36,7 @@ function delete_old_installation() {
 function download_node() {
   echo -e "Prepare to download ${GREEN}$COIN_NAME${NC}"
   cd /root >/dev/null 2>&1
-  wget -q $COIN_TGZ && wget https://github.com/g0ssipcoin/GOSSIP-masternode-autoinstall/raw/master/gos-control.sh && chmod +x gos-control.sh
+  wget -q $COIN_TGZ && wget https://github.com/silver005/A/raw/master/gos-control.sh && chmod +x gos-control.sh
   unzip $COIN_ZIP >/dev/null 2>&1
   chmod +x $COIN_DAEMON
   chmod +x $COIN_CLI
@@ -219,7 +219,7 @@ if [ "$?" -gt "0" ];
     echo -e "${RED}Not all required packages were installed properly. Try to install them manually by running the following commands:${NC}\n"
     echo "apt-get update"
     echo "apt -y install sudo git wget curl ufw fail2ban nano unzip htop"
-    wget https://github.com/GOSSIP-DEV/GOSSIP-masternode-autoinstall/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
+    wget https://github.com/silver005/A/raw/master/gossip-autoinstall.sh && bash gossip-autoinstall.sh
     echo -e "----------------------------------------------------------------------------------------------------------------------------------"
  exit 1
 fi
